@@ -1,0 +1,109 @@
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-registration input {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+a {
+    text-decoration: none; 
+    color: black; 
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .form-registration input {
+    border-radius: 0;
+    margin-bottom: -1px;
+  }
+  
+  a {
+    text-decoration: none; 
+    color: black; 
+  }
+  
+  nav {
+    background-color: black !important;
+  }
+  
+  nav a,
+  nav i {
+    color: white !important;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 369px;
+    height: 105.9px;
+    background: rgba(65, 60, 115, 0.76);
+    color: white;
+  }
+  
+  .btn-white {
+    margin-top: 20px;
+    border-radius: 20px;
+    color: white;
+    outline: 1px solid white;
+  }
+  
+  .card-img-top {
+    padding: 20px;
+    width: 100%; /* untuk memastikan lebar penuh sesuai card */
+    height: 300px; /* ganti sesuai kebutuhan Anda */
+    object-fit: contain; /* untuk menjaga aspek rasio gambar */
+  }
+  
+  footer a,
+  footer li {
+    color: white;
+  }
+  
+  /* CSS untuk layar dengan lebar 768px atau lebih kecil */
+  @media screen and (max-width: 768px) {
+    /* Aturan CSS untuk tampilan pada layar kecil */
+  }
+  
+  /* CSS untuk layar dengan lebar 992px atau lebih kecil */
+  @media screen and (max-width: 992px) {
+    /* Aturan CSS untuk tampilan pada layar sedang */
+  }
+  
+  /* CSS untuk layar dengan lebar 1200px atau lebih kecil */
+  @media screen and (max-width: 1200px) {
+    /* Aturan CSS untuk tampilan pada layar besar */
+  }
+  
