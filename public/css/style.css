@@ -47,7 +47,7 @@ a {
   
   a {
     text-decoration: none; 
-    color: black; 
+    color: white; 
   }
   
   nav {
@@ -60,9 +60,14 @@ a {
   }
   
   body {
-    background-color: black;
+    background-color: white;
   }
-  
+  .text_home {
+    color: white;
+  }
+  .nav-item{
+    color: black;
+  }
   .box {
     display: flex;
     justify-content: center;

@@ -16,17 +16,22 @@
     {{-- My Style --}}
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>Projek Pemweb| {{ $title }}</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek Pemweb</title>
+
+    {{-- <title>Projek Pemweb| {{ $title }}</title> --}}
 </head>
 
 <body>
 
-    @include('partials.navbar')
-
-    <div class="container mt-4">
-      @yield('container')
-    </div>
-
+    {{-- @include('partials.navbar') --}}
+    <main>
+        <div class="container mt-4">
+        @yield('container')
+        </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
