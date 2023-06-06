@@ -18,7 +18,7 @@ use App\Http\Controllers\Admin;
 
 
 Route::get('/', function () {
-    return view('partials.navbar', [
+    return view('home', [
         "title" => "Home",
         "active" => 'home'
     ]);
@@ -32,10 +32,30 @@ Route::get('/categories', function() {
         'categories' => Category::all()
     ]);
 });
+
+
+
+
 Route::get('/phone', function() {
+    $blog_phone =[
+            [
+                "gambar" => "img/hp2-removebg-preview.png",
+                "nama_produk" => "Samsung",
+                "slug" => 'hp-satu',
+                "harga" => "Rp 12.000"
+            ],
+            [
+                "gambar" => "img/camera.png",
+                "nama_produk" => "Oppo",
+                "slug" => 'hp-dua',
+                "harga" => "Rp 15.000"
+            ]
+        ];
+
     return view('phone', [
         'title' => 'Phone',
         'active' => 'phone',
+        'post' => $blog_phone
     ]);
 });
 Route::get('/laptops', function() {
@@ -56,6 +76,12 @@ Route::get('/tentang', function() {
         'active' => 'tentang',
     ]);
 });
+Route::get('/view', function() {
+    return view('view-product', [
+        'title' => 'View',
+        'active' => 'view',
+    ]);
+});
 
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
@@ -73,4 +99,35 @@ Route::prefix('admin')->group(function(){
     Route::post('/login',[Admin\Auth\LoginController::class,'login']) -> name ('admin.login');
     Route::get('/home',[Admin\HomeController::class,'index']) -> name ('admin.home');
     Route::get('/logout',[Admin\Auth\LoginController::class,'logout']) -> name ('admin.logout');
+});
+
+    
+
+Route::get('view/{slug}', function ($slug){
+    $blog_phone =[
+        [
+            "gambar" => "img/hp2-removebg-preview.png",
+            "nama_produk" => "Samsung",
+            "slug" => 'hp-satu',
+            "harga" => "Rp 12.000"
+        ],
+        [
+            "gambar" => "img/camera.png",
+            "nama_produk" => "Oppo",
+            "slug" => 'hp-dua',
+            "harga" => "Rp 15.000"
+        ]
+    ];
+
+    $new_phone=[];
+    foreach($blog_phone as $phone){
+        if($phone["slug"] === $slug){
+            $new_phone = $phone;
+        }
+    }
+
+    return view('detail',[
+        "title" => "Single Post",
+        "phone" =>  $new_phone
+]);
 });

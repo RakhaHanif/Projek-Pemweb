@@ -32,12 +32,12 @@
 
     <section class="content-review">
         <div class="content">
-            <img src="img/hp1 2.svg" alt="">
+            {{-- <img src="img/hp1 2.svg" alt="">
             <h1>Motorola Edge+ (2023)</h1>
-            <h3>Rp 50.000.000</h3>
-            {{-- <img src="{{ $phone["gambar"] }}" alt="">
+            <h3>Rp 50.000.000</h3> --}}
+            <img src="{{ $phone["gambar"] }}" alt="">
             <h1>{{ $phone["nama_produk"] }}</h1>
-            <h3>{{ $phone["harga"] }}</h3> --}}
+            <h3>{{ $phone["harga"] }}</h3>
         </div>
     </section>
 

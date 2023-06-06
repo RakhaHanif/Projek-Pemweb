@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+    <script src="https://kit.fontawesome.com/348c676099.js" crossorigin="anonymous"></script>
     {{-- Bootstrap Icons --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
@@ -19,14 +20,13 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projek Pemweb</title>
-
-    {{-- <title>Projek Pemweb| {{ $title }}</title> --}}
+    <title>CGET</title>
 </head>
 
 <body>
 
     {{-- @include('partials.navbar') --}}
+    
     <main>
         <div class="container mt-4">
         @yield('container')

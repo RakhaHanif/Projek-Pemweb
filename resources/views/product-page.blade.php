@@ -1,3 +1,5 @@
+@extends('layouts.main')
+@section('container')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +13,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="nav-container">
-        <a href="#" class="logo"><img src="img/logo.png" alt="" ></a>
+
+  <nav class="navbar navbar-expand-lg text-white">
+  <section class="nav-container">
+        <a href="/" class="logo"><img src="img/logo.png" alt="" ></a>
         <ul>
             <li><a href="#">Phone</a></li>
             <li><a href="#">Laptop</a></li>
@@ -27,14 +31,14 @@
         <a href="#" class="acc-a"><img src="img/user.svg" alt="" class="account"></a>
 
     </section>
-
+  </nav>
 
     <section class="header-judul">
       <div class="container">
         <h1>Temukan Gadget Sesuai Kebutuhanmu</h1>
 
         <div class="content">
-          <img src="img/bg1.svg" alt="" class="background-image">
+          {{-- <img src="img/bg1.svg" alt="" class="background-image"> --}}
           <ul class="filter-list"></ul>
           <div class="tags">
             <!-- 3 Tag di atas -->
@@ -110,8 +114,10 @@
         <div class="grid-container">
           <div class="items-grid">
             <img src="img/hp2-removebg-preview.png" alt="Phone-image">
-            <h3>Merk Smartphone</h3>
-            <h4>harga</h4>
+            @foreach ($post as $phone )
+            <h1>{{ $phone["nama_produk"] }}</h1>
+            <h3>{{ $phone["harga"] }}</h3>
+            @endforeach
             <button>Selebihnya</button>
           </div>
           <div class="items-grid">
@@ -178,14 +184,6 @@
         <button class="page">selanjutnya</button>
       </div>
     </section>
-
-
-
-
-
-
-
-
 
 
     <footer>
@@ -387,3 +385,4 @@ generatePagination();
     </script>
 </body>
 </html>
+@endsection
