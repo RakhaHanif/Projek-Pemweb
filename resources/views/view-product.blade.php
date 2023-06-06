@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <section class="nav-container">
@@ -25,60 +26,132 @@
         </form>
 
         <a href="#" class="acc-a"><img src="img/user.svg" alt="" class="account"></a>
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4
     </section>
 
-    <section class="content-review">
+    
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+
+       
+
+      <div class="carousel__snapper">
         <div class="content">
             <img src="img/hp1 2.svg" alt="">
             <h1>Judul Product</h1>
             <h3>Harga Product</h3>
         </div>
-    </section>
+        
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+       
+      <div class="carousel__snapper">
+        <div class="product-card">
+            <div class="product-title">
+              <h2>Product Name</h2>
+              <h3>Harga</h3>
+            </div>
+            <ul class="product-specs">
+              <li><span><i class="fa-solid fa-display" style="color: #ffffff;"></i></span>
+                <div class="value-specs">
+                  <h5>Display</h5>
+                  <h3>Value 1</h3>
+                </div>
+              </li>
+              <li><span><i class="fa-solid fa-microchip" style="color: #ffffff;"></i></span>
+                <div class="value-specs">
+                  <h5>Prosesor</h5>
+                  <h3>Value 1</h3>
+                </div>
+              </li>
+              <li><span><i class="fa-solid fa-sd-card" style="color: #ffffff;"></i></span> 
+                <div class="value-specs">
+                  <h5>Memory Internal</h5>
+                  <h3>Value 1</h3>
+                </div>
+              </li>
+              <li><span><i class="fa-solid fa-memory" style="color: #ffffff;"></i></span> 
+                <div class="value-specs">
+                  <h5>RAM</h5>
+                  <h3>Value 1</h3>
+                </div>  
+              </li>
+              <li><span><i class="fa-solid fa-camera" style="color: #ffffff;"></i></span>
+                <div class="value-specs">
+                  <h5>Kamera</h5>
+                  <h3>Value 1</h3>
+                </div>
+              </li>
+              <li><span><i class="fa-sharp fa-solid fa-gear" style="color: #ffffff;"></i></span>
+                <div class="value-specs">
+                  <h5>Sistem Operasi</h5>
+                  <h3>Value 1</h3>
+                </div>
+              </li>
+
+            </ul>
+            <button class="product-button"><a href="#"> Buy Now</a></button>
+        </div>
+      </div>
+      <a href="#carousel__slide1"
+           class="carousel__prev">Go to last slide</a>
+      
+    </li>
+  
+  </ol>
+
+</section>
+
+
+
+   
+
+
+
+
+
+
 
     <section class="produk-serupa">
         <h2>Produk Serupa</h2>
         <div class="grid-container">
             <div class="items-grid">
                 <img src="img/hp2-removebg-preview.png" alt="Phone-image">
-                <h3>Merk Smartphone</h3>
+                <a href="#"><h3>Merk Smartphone</h3></a>
                 <h4>harga</h4>
-                <button>Selebihnya</button>
+    
               </div>
               <div class="items-grid">
                 <img src="img/hp2-removebg-preview.png" alt="Phone-image">
-                <h3>Merk Smartphone</h3>
+                <a href="#"><h3>Merk Smartphone</h3></a>
                 <h4>harga</h4>
-                <button>Selebihnya</button>
               </div>
               <div class="items-grid">
                 <img src="img/hp2-removebg-preview.png" alt="Phone-image">
-                <h3>Merk Smartphone</h3>
+                <a href="#"><h3>Merk Smartphone</h3></a>
                 <h4>harga</h4>
-                <button>Selebihnya</button>
               </div>
               <div class="items-grid">
                 <img src="img/hp2-removebg-preview.png" alt="Phone-image">
-                <h3>Merk Smartphone</h3>
+                <a href="#"><h3>Merk Smartphone</h3></a>
                 <h4>harga</h4>
-                <button>Selebihnya</button>
               </div>
               <div class="items-grid">
                 <img src="img/hp2-removebg-preview.png" alt="Phone-image">
-                <h3>Merk Smartphone</h3>
+                <a href="#"><h3>Merk Smartphone</h3></a>
                 <h4>harga</h4>
-                <button>Selebihnya</button>
               </div>
         </div>
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4
     </section>
 
     <section class="footer">
@@ -94,11 +167,7 @@
                     <h5>I agree to receive product information and special promotional offers by email from Cget, and I confirm that I am 16 years of age or older.</h5>
                   </form>
             </div>
-<<<<<<< HEAD
        
-=======
-
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4
             <div class="footer-class">
                 <img src="img/logo.png" alt="logo">
                 <ul>
@@ -117,17 +186,36 @@
                 <div class="watermark">
                     <h4>© 2023 Cget. All rights reserved.</h4>
                 </div>
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4
             </div>
     </footer>
     </section>
+
+
+
+
+    <script>
+        const carouselContainer = document.querySelector('.spesifikasi');
+        const carousel = carouselContainer.querySelector('.carousel');
+        const prevButton = carouselContainer.querySelector('.prev-button');
+        const nextButton = carouselContainer.querySelector('.next-button');
+
+        const cardWidth = carouselContainer.offsetWidth;
+        let position = 0;
+
+        prevButton.addEventListener('click', () => {
+        position += cardWidth;
+        position = Math.min(0, position);
+        carousel.style.transform = `translateX(${position}px)`;
+        });
+
+        nextButton.addEventListener('click', () => {
+        position -= cardWidth;
+        const maxPosition = -((carousel.scrollWidth - carouselContainer.offsetWidth) + cardWidth);
+        position = Math.max(maxPosition, position);
+        carousel.style.transform = `translateX(${position}px)`;
+        });
+
+    </script>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4
