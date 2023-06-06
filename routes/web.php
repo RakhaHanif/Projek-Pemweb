@@ -10,6 +10,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\Admin;
+use App\Models\Tampil;
 
 
 // Route::get('/', function () {
@@ -29,7 +30,7 @@ Route::get('/categories', function() {
     return view('categories', [
         'title' => 'Post Categories',
         'active' => 'categories',
-        'categories' => Category::all()
+        // 'categories' => Category::all()
     ]);
 });
 
@@ -37,25 +38,10 @@ Route::get('/categories', function() {
 
 
 Route::get('/phone', function() {
-    $blog_phone =[
-            [
-                "gambar" => "img/hp2-removebg-preview.png",
-                "nama_produk" => "Samsung",
-                "slug" => 'hp-satu',
-                "harga" => "Rp 12.000"
-            ],
-            [
-                "gambar" => "img/camera.png",
-                "nama_produk" => "Oppo",
-                "slug" => 'hp-dua',
-                "harga" => "Rp 15.000"
-            ]
-        ];
-
     return view('phone', [
         'title' => 'Phone',
         'active' => 'phone',
-        'post' => $blog_phone
+        'post' => Tampil::all()
     ]);
 });
 Route::get('/laptops', function() {
@@ -77,7 +63,7 @@ Route::get('/tentang', function() {
     ]);
 });
 Route::get('/view', function() {
-    return view('view-product', [
+    return view('view-product1', [
         'title' => 'View',
         'active' => 'view',
     ]);
@@ -104,30 +90,16 @@ Route::prefix('admin')->group(function(){
     
 
 Route::get('view/{slug}', function ($slug){
-    $blog_phone =[
-        [
-            "gambar" => "img/hp2-removebg-preview.png",
-            "nama_produk" => "Samsung",
-            "slug" => 'hp-satu',
-            "harga" => "Rp 12.000"
-        ],
-        [
-            "gambar" => "img/camera.png",
-            "nama_produk" => "Oppo",
-            "slug" => 'hp-dua',
-            "harga" => "Rp 15.000"
-        ]
-    ];
 
-    $new_phone=[];
-    foreach($blog_phone as $phone){
-        if($phone["slug"] === $slug){
-            $new_phone = $phone;
-        }
-    }
+    // $new_phone=[];
+    // foreach($blog_phone as $phone){
+    //     if($phone["slug"] === $slug){
+    //         $new_phone = $phone;
+    //     }
+    // }
 
     return view('detail',[
         "title" => "Single Post",
-        "phone" =>  $new_phone
+        "phone" =>  Tampil::find($slug)
 ]);
 });

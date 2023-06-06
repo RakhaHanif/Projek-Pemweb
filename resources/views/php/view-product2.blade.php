@@ -1,6 +1,3 @@
-@extends('layouts.main')
-@section('container')
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +13,7 @@
 </head>
 <body>
     <section class="nav-container">
-        <a href="/" class="logo"><img src="img/logo.png" alt="" ></a>
+        <a href="#" class="logo"><img src="img/logo.png" alt="" ></a>
         <ul>
             <li><a href="#">Phone</a></li>
             <li><a href="#">Laptop</a></li>
@@ -29,11 +26,7 @@
         </form>
 
         <a href="#" class="acc-a"><img src="img/user.svg" alt="" class="account"></a>
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4
     </section>
 
     
@@ -43,17 +36,12 @@
     <li id="carousel__slide1"
         tabindex="0"
         class="carousel__slide">
-
-       
-
+        
       <div class="carousel__snapper">
         <div class="content">
             <img src="img/hp1 2.svg" alt="">
-            <h1>Motorola Edge+ (2023)</h1>
-            <h3>Rp 50.000.000</h3>
-            {{-- <img src="{{ $phone["gambar"] }}" alt="">
-            <h1>{{ $phone["nama_produk"] }}</h1>
-            <h3>{{ $phone["harga"] }}</h3> --}}
+            <h1>Judul Product</h1>
+            <h3>Harga Product</h3>
         </div>
         
         <a href="#carousel__slide2"
@@ -161,11 +149,7 @@
                 <h4>harga</h4>
               </div>
         </div>
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4
     </section>
 
     <section class="footer">
@@ -181,11 +165,7 @@
                     <h5>I agree to receive product information and special promotional offers by email from Cget, and I confirm that I am 16 years of age or older.</h5>
                   </form>
             </div>
-<<<<<<< HEAD
        
-=======
-
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4
             <div class="footer-class">
                 <img src="img/logo.png" alt="logo">
                 <ul>
@@ -204,11 +184,7 @@
                 <div class="watermark">
                     <h4>© 2023 Cget. All rights reserved.</h4>
                 </div>
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4
             </div>
     </footer>
     </section>
@@ -240,8 +216,4 @@
 
     </script>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 9c2b8f9c909f1dc2a31060d01c5455175729bad4

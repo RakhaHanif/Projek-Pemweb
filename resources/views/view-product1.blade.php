@@ -30,83 +30,17 @@
         <a href="#" class="acc-a"><img src="img/user.svg" alt="" class="account"></a>
     </section>
 
-    <section class="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
-            <li id="carousel__slide1"
-                tabindex="0"
-                class="carousel__slide">  
-            <div class="carousel__snapper">    
-                <div class="content">
-                    {{-- <img src="img/hp1 2.svg" alt="">
-                    <h1>Motorola Edge+ (2023)</h1>
-                    <h3>Rp 50.000.000</h3> --}}
-                    <img src="{{ $phone["gambar"] }}" alt="">
-                    <h1>{{ $phone["nama_produk"] }}</h1>
-                    <h3>{{ $phone["harga"] }}</h3>
-                </div>
-                <a href="#carousel__slide2"
-                    class="carousel__next">Go to next slide</a>
-            </div>
-            </li>  
-            <li id="carousel__slide2"
-        tabindex="0"
-        class="carousel__slide">
-       
-      <div class="carousel__snapper">
-        <div class="product-card">
-            <div class="product-title">
-              <h2>Product Name</h2>
-              <h3>Harga</h3>
-            </div>
-            <ul class="product-specs">
-              <li><span><i class="fa-solid fa-display" style="color: #ffffff;"></i></span>
-                <div class="value-specs">
-                  <h5>Display</h5>
-                  <h3>Value 1</h3>
-                </div>
-              </li>
-              <li><span><i class="fa-solid fa-microchip" style="color: #ffffff;"></i></span>
-                <div class="value-specs">
-                  <h5>Prosesor</h5>
-                  <h3>Value 1</h3>
-                </div>
-              </li>
-              <li><span><i class="fa-solid fa-sd-card" style="color: #ffffff;"></i></span> 
-                <div class="value-specs">
-                  <h5>Memory Internal</h5>
-                  <h3>Value 1</h3>
-                </div>
-              </li>
-              <li><span><i class="fa-solid fa-memory" style="color: #ffffff;"></i></span> 
-                <div class="value-specs">
-                  <h5>RAM</h5>
-                  <h3>Value 1</h3>
-                </div>  
-              </li>
-              <li><span><i class="fa-solid fa-camera" style="color: #ffffff;"></i></span>
-                <div class="value-specs">
-                  <h5>Kamera</h5>
-                  <h3>Value 1</h3>
-                </div>
-              </li>
-              <li><span><i class="fa-sharp fa-solid fa-gear" style="color: #ffffff;"></i></span>
-                <div class="value-specs">
-                  <h5>Sistem Operasi</h5>
-                  <h3>Value 1</h3>
-                </div>
-              </li>
-
-            </ul>
-            <button class="product-button"><a href="#"> Buy Now</a></button>
+    <section class="content-review">
+        <div class="content">
+            <img src="img/hp1 2.svg" alt="">
+            <h1>Motorola Edge+ (2023)</h1>
+            <h3>Rp 50.000.000</h3>
+            {{-- <img src="{{ $phone["gambar"] }}" alt="">
+            <h1>{{ $phone["nama_produk"] }}</h1>
+            <h3>{{ $phone["harga"] }}</h3> --}}
         </div>
-      </div>
-      <a href="#carousel__slide1"
-           class="carousel__prev">Go to last slide</a>
-      
-    </li>  
-        </ol>
     </section>
-    
+
     <section class="produk-serupa">
         <h2>Produk Serupa</h2>
         <div class="grid-container">
@@ -141,7 +75,7 @@
                 <button>Selebihnya</button>
               </div>
         </div>
-            
+
     </section>
 
     <section class="footer">
