@@ -1,0 +1,51 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    background: #001428;
+
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10%;
+    align-content: center;
+    gap: 5%
+}
+.nav-container>a, .logo > img{
+    padding-top:10px;
+    padding-left:25px;
+}
+.nav-container > ul{
+    display: flex;
+    list-style: none;
+    grid-column:2;
+    gap: 2rem;
+}
+.nav-container > ul >li> a{
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #f1f1f1;
+}
+.nav-container > ul >li> a:hover{
+    color: #7291A3;
+    transition-duration: 0.3s;
+}
+.nav-container > form{
+    padding-top: 17px;
+}
+.nav-container > form > input{
+    padding:5px;
+    width: 215px;
+    background: rgba(255, 255, 255, 0.5);    border-radius: 10px;
+}
+.nav-container > form > input::placeholder{
+    color:#f1f1f1
+}
+.nav-container> a >.account{
+    padding-left: 75px;
+    padding-top: 20px;
+    align-text: center;
+    grid-column:4;
+}
